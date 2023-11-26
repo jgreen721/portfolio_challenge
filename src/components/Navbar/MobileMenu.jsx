@@ -11,12 +11,12 @@ const MobileMenu = ({showMobile}) => {
                 </Link>
             </li>
             <li className="mobile-link-item">
-                <Link className="mobile-link" to="/">
+                <Link className="mobile-link" to="/portfolio">
                 <h5> Portfolio </h5>
                 </Link>
             </li>
             <li className="mobile-link-item">
-                <Link className="mobile-link" to="/">
+                <Link className="mobile-link" to="/contact">
                     <h5>Contact Me </h5>
                 </Link>
             </li>
