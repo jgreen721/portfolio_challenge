@@ -1,0 +1,33 @@
+.contact-view-container {
+  padding: 2rem var(--mainPaddingX);
+}
+
+.contact-parent-row {
+  gap: 12rem;
+  display: flex;
+  border-top: 3px solid var(--lightgray);
+  padding: 4.8rem 0;
+}
+
+.contact-header-column {
+  flex: 1;
+  /* border: 3px solid green; */
+}
+
+.contact-content-column {
+  flex: 2;
+  /* border: 2px solid red; */
+}
+
+.contact-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+  .contact-parent-row {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}

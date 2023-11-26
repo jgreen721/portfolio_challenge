@@ -1,0 +1,27 @@
+.carousel-row {
+  border-top: 2px solid var(--lightgray);
+  border-bottom: 2px solid var(--lightgray);
+  padding: 3rem 0;
+  margin-bottom: 7rem;
+}
+
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+
+.carousel-item {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  /* border: 2px solid red; */
+}
+
+.carousel-partition-item {
+  width: 2px;
+  height: 100px;
+  position: relative;
+  background: var(--lightgray);
+}

@@ -1,0 +1,85 @@
+.app {
+  max-width: 144rem;
+  margin: 0 auto;
+  border: 2px solid black;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Animations */
+
+.scaleCard {
+  transform: scale(0);
+  animation: scaleCard 2s forwards;
+}
+
+@keyframes scaleCard {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.clearImg {
+  filter: blur(10px);
+
+  animation: clearImg 2s forwards;
+}
+
+@keyframes clearImg {
+  100% {
+    filter: blur(0px);
+  }
+}
+
+.slideup {
+  bottom: -150vw;
+  animation: slideUp 2s forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    bottom: -150vw;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+.slideright {
+  transform: translateX(-100vw);
+  /* color: red; */
+  animation: slideright 1s forwards;
+}
+
+@keyframes slideright {
+  0% {
+    transform: translateX(-100vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+.slideleft {
+  transform: translateX(100vw);
+
+  animation: slideleft 1s forwards;
+  /* background: red; */
+}
+
+@keyframes slideleft {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
