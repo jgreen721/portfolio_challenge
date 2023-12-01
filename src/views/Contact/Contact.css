@@ -25,6 +25,12 @@
   gap: 1rem;
 }
 
+.success-alert {
+  font-size: 2rem;
+  line-height: 1.85rem;
+  font-weight: 200;
+}
+
 .error-div {
   /* content: ""; */
   /* border: 5px solid black; */

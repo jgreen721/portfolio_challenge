@@ -6,11 +6,13 @@ const ContactForm = () => {
   const [errorName,setErrorName] = useState("")
   const [errorEmail,setErrorEmail] = useState("")
   const [errorMessage,setErrorMessage] = useState("")
+  const [successMsg,setSuccessMsg] = useState("")
   const nameErrorRef = useRef()
   const emailErrorRef = useRef()
   const messageErrorRef = useRef()
 
   const handleFormSubmit = (e)=>{
+    if(successMsg)return;
     e.preventDefault();
     console.log('contactForm fired!',contactFormRef)
     const formData = new FormData(contactFormRef.current)
@@ -20,19 +22,31 @@ const ContactForm = () => {
       message:formData.get("message"),
     }
     console.log("contactInfo",contactInfo);
+    let hasError = false;
     for(let i in contactInfo){
       if(contactInfo[i] == ""){
-         console.log("invalid input!",);
+         console.log("invalid input!");
+         hasError = true;
          if(i == "name")nameErrorRef.current.classList.add("show-error")
          if(i == "email")emailErrorRef.current.classList.add("show-error")
          if(i == "message")messageErrorRef.current.classList.add("show-error")
       }
     }
+    if(!hasError){
+      toggleAlert("Your email was successfully sent! :)")
+    }
+  }
+
+  const toggleAlert=(msg)=>{
+    setSuccessMsg(msg);
+    setTimeout(()=>setSuccessMsg(""),2000)
   }
   return (
     <div className="contact-parent-row">
       <div className="contact-column contact-header-column">
             <h3 className="header-font">Contact Me</h3>
+            <h3 className="success-alert">{successMsg}</h3>
+
         </div>
         <div className="contact-column contact-content-column">
 <div className="contact-form">
