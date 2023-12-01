@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   background: var(--grayishdarkblue);
-  margin-top: 12.5rem;
+  /* margin-top: 0rem; */
 }
 
 .footer-column,
@@ -32,9 +32,9 @@
 }
 
 @media screen and (max-width: 1050px) {
-  .footer {
-    margin-top: 9rem;
-  }
+  /* .footer {
+    margin-top: 0rem;
+  } */
   .footer-nav-links {
     gap: 2.5rem;
   }

@@ -4,6 +4,7 @@
   justify-content: space-between;
   padding: 0rem var(--mainPaddingX);
   gap: 2rem;
+  margin: 10rem 0;
   /* border: 2px solid red; */
 }
 
@@ -51,7 +52,7 @@
   .contact-me-section {
     flex-direction: column;
     gap: 2rem;
-    margin: 8rem 0;
+    margin-top: 4rem;
     text-align: center;
   }
 }

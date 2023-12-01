@@ -80,6 +80,7 @@
 @media screen and (max-width: 550px) {
   .portfolio-list {
     display: none;
+    margin-bottom: 4rem;
   }
 
   .mobile-portfolio-list {

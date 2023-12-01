@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const MobileMenu = ({showMobile}) => {
+const MobileMenu = ({setShowMobile,showMobile}) => {
   return (
-    <section className={showMobile ? "mobile-menu" : "mobile-menu hide-mobile-menu"}>
+    <section className={showMobile ? "mobile-menu-parent" : "mobile-menu-parent hide-mobile-menu"}>
         <ul className="mobile-links">
             <li onClick={()=>setShowMobile(false)} className="mobile-link-item">
                 <Link className="mobile-link" to="/">

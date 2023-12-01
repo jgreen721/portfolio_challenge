@@ -126,8 +126,15 @@ label {
   background: var(--lightgray);
   margin: 1rem 0;
   border: none;
+  outline: none;
   border-radius: 0.5rem;
   font-size: 1.6rem;
+}
+
+.form-control:focus {
+  /* border-bottom: 4px solid var(--cyan); */
+  box-shadow: 1px 1px 1px var(--cyan), 1px 1px 10px var(--cyan),
+    1px 1px 25px var(--grayishdarkblue);
 }
 
 .form-control::placeholder {

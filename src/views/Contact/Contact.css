@@ -25,6 +25,28 @@
   gap: 1rem;
 }
 
+.error-div {
+  /* content: ""; */
+  /* border: 5px solid black; */
+  /* padding: 0.5rem; */
+  /* width: 150px;
+  height: 30px; */
+  position: relative;
+  overflow: hidden;
+}
+
+.error {
+  color: var(--red);
+  font-weight: 200;
+  position: relative;
+  transition: 0.5s ease;
+  transform: translateY(-65px);
+}
+
+.show-error {
+  transform: translateY(0px);
+}
+
 @media screen and (max-width: 850px) {
   .contact-parent-row {
     flex-direction: column;

@@ -43,7 +43,7 @@ const Navbar = () => {
         </div>
         {/* <MobileMenu showMobile={showMobile}/> */}
     </div>
-    <MobileMenu showMobile={showMobile}/>
+    <MobileMenu setShowMobile={setShowMobile} showMobile={showMobile}/>
 
         </div>
 
