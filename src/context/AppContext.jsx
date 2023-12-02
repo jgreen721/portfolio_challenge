@@ -21,6 +21,7 @@ export const AppProvider = ({ children }) => {
         tablet:tabletManageGallery,
         mobile:mobileManageGallery
       },
+      link:"https://jgreen721.github.io/react_manage_landing/",
       projInfo:{
         hero:{
           desktop:"./images/detail/desktop/image-manage-hero.jpg",
@@ -52,6 +53,7 @@ export const AppProvider = ({ children }) => {
       tablet:tabletBookmarkGallery,
       mobile:mobileBookmarkGallery
       },
+      link:"https://jgreen721.github.io/react_bookmark_app/",
       projInfo:{
         hero:{
           desktop:"./images/detail/desktop/image-bookmark-hero.jpg",
@@ -83,6 +85,7 @@ export const AppProvider = ({ children }) => {
       tablet:tabletInsureGallery,
       mobile:mobileInsureGallery
       },
+      link:"https://jgreen721.github.io/frontend_challenges/insure_landing/index.html",
       projInfo:{
         hero:{
           desktop:"./images/detail/desktop/image-insure-hero.jpg",
@@ -114,6 +117,7 @@ export const AppProvider = ({ children }) => {
         tablet:tabletFyloGallery,
         mobile:mobileFyloGallery
       },
+      link:"https://jgreen721dev.com",
       projInfo:{
         hero:{
           desktop:"./images/detail/desktop/image-fylo-hero.jpg",
@@ -136,9 +140,11 @@ export const AppProvider = ({ children }) => {
     },
   ];
   const navigate = useNavigate()
-  const [projectInfo, setProjectInfo] = useState(null);
+  const [projectInfo, setProjectInfo] = useState({});
 
   // console.log("ProjectId",project)
+
+ 
 
   const viewProject = (id)=>{
     console.log("projectId",id);

@@ -16,6 +16,7 @@
   display: flex;
   align-items: center;
   gap: 3.5rem;
+  cursor: pointer;
   /* border: 2px solid red; */
 }
 
@@ -24,4 +25,31 @@
   height: 100px;
   position: relative;
   background: var(--lightgray);
+}
+
+.mobile-carousel-column {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .mobile-carousel-column {
+    display: block;
+  }
+
+  .flex-start-mobile {
+    align-items: flex-start;
+    border: 2px solid red;
+  }
+
+  .flex-end-mobile {
+    align-items: flex-end;
+    border: 2px solid red;
+  }
+  .desktop-carousel-column {
+    display: none;
+  }
+  .carousel-item {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }

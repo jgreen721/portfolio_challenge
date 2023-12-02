@@ -1,9 +1,11 @@
 import React, {useRef, useEffect} from 'react'
 import { appObserver } from '../../../../utils/Observer';
+import {useAppContext} from "../../../../context/AppContext"
 import "./PortfolioItem.css"
 
 const PortfolioItem = ({item}) => {
     const itemRef = useRef();
+    const {viewProject} = useAppContext()
 
 
     useEffect(()=>{

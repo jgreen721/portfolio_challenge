@@ -7,7 +7,6 @@ import './App.css'
 function App() {
   const path = useResolvedPath()
 
-  console.log(path.pathname)
   return (
     <AppProvider>
     <div className="app">

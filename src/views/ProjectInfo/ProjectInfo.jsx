@@ -1,6 +1,6 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import { useAppContext } from '../../context/AppContext'
-import {useParams, useNavigate} from "react-router-dom"
+import { useNavigate} from "react-router-dom"
 import "./ProjectInfo.css"
 import CarouselRow from './components/CarouselRow/CarouselRow'
 
@@ -8,20 +8,16 @@ import CarouselRow from './components/CarouselRow/CarouselRow'
 const ProjectInfo = () => {
   const {projectInfo} = useAppContext();
   const navigate = useNavigate();
-  // const {project:currentId} = useParams()
 
   useEffect(()=>{
-    console.log('projectInfo',projectInfo?.current)
     if(!projectInfo?.current){
-      console.log('redirect client')
-      navigate("/portfolio",{replace:true})
-      }
-     
+      console.log('redirect client!')
+      navigate("/portfolio")
+    }
+  })
 
-  },[])
 
-  console.log("ProjectInfo",projectInfo);
-  return (
+  return  projectInfo.current ? (
     <div className="view-container project-info-parent">
       <header className="project-hero-parent">
       <picture>
@@ -50,7 +46,9 @@ const ProjectInfo = () => {
               ))}
             </ul> 
             </div>
+            <a target="_blank" href={projectInfo.current.link}>
       <button className="btn secondary-btn">Visit Website</button>
+      </a>
           </div>
           <div className="line project-info-line"></div>
 
@@ -82,7 +80,7 @@ const ProjectInfo = () => {
     
    
     </div>
-  )
+  ) : "Lost projectInfo state :/"
 }
 
 export default ProjectInfo
