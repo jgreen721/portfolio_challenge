@@ -38,12 +38,12 @@
 
   .flex-start-mobile {
     align-items: flex-start;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
 
   .flex-end-mobile {
     align-items: flex-end;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
   .desktop-carousel-column {
     display: none;
